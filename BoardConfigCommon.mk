@@ -124,7 +124,8 @@ ifeq ($(CONFIG_GTE_COMMON_SEPOLICY),true)
         user_debug=23 \
         msm_rtb.filter=0x3F \
         ehci-hcd.park=3 \
-        androidboot.bootdevice=7824900.sdhci
+        androidboot.bootdevice=7824900.sdhci \
+        zcache.compressor=lz4
 else
     BOARD_KERNEL_CMDLINE += \
         androidboot.hardware=qcom \
@@ -132,7 +133,8 @@ else
         msm_rtb.filter=0x3F \
         ehci-hcd.park=3 \
         androidboot.bootdevice=7824900.sdhci \
-        androidboot.selinux=permissive
+        androidboot.selinux=permissive \
+        zcache.compressor=lz4
 endif
 
 BOARD_CUSTOM_BOOTIMG := true
