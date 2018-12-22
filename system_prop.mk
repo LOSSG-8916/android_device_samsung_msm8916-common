@@ -181,3 +181,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ZRAM - Size in MB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.zram.size=128
+
+# Memory optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.am.reschedule_service=true
