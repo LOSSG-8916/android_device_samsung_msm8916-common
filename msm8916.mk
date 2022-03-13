@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0 \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
+    android.hardware.bluetooth.a2dp@1.0-impl \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.msm8916 \
@@ -76,7 +77,6 @@ endif
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-impl \
 
 PRODUCT_PACKAGES += \
     libbase_shim \
