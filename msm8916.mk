@@ -70,13 +70,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 ifneq ($(USE_CUSTOM_MIXER_PATHS), true)
-ifneq ($(NUMBER_OF_SPEAKER), 2)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/dual/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-else
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/single/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-endif
+    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 endif
 
 # Bluetooth
