@@ -58,6 +58,8 @@ on early-boot
     chown root audio /sys/kernel/boot_adsp/boot
     setprop qcom.audio.init complete
 
+    setprop persist.service.bdroid.bdaddr "/efs/bluetooth/bt_addr"
+
 on boot
     start rmt_storage
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
