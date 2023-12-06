@@ -126,6 +126,7 @@ ifeq ($(CONFIG_GTE_COMMON_SEPOLICY),true)
         msm_rtb.filter=0x3F \
         ehci-hcd.park=3 \
         androidboot.bootdevice=7824900.sdhci \
+        zcache.enabled=1 \
         zcache.compressor=lz4
 else
     BOARD_KERNEL_CMDLINE += \
@@ -135,6 +136,7 @@ else
         ehci-hcd.park=3 \
         androidboot.bootdevice=7824900.sdhci \
         androidboot.selinux=permissive \
+        zcache.enabled=1 \
         zcache.compressor=lz4
 endif
 
